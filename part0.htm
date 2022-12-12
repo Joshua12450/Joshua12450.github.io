@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+ <title>Calculator</title>
+ </head>
+ <body>
+ <table>
+ <tr>
+ <td>1st Number: </td>
+ <td> <input type="text" name="n1" value="" id="n1"> </td>
+ </tr>
+ <tr>
+ <td>2nd Number: </td>
+ <td><input type="text" name="n2" value="" id="n2"></td>
+ </tr>
+ <tr>
+ <td>Result: </td>
+ <td><input type="text" name="res" value="" disabled id="res"></td>
+ </tr>
+ <tr>
+ <td></td>
+ <td style="text-align:center"> <button type="button" name="button"
+onclick="add()"> Add </button> </td>
+ </tr>
+ </table>
+ <script type="text/javascript">
+ function add() {
+ var n1 = document.getElementById('n1').value;
+ var n2 = document.getElementById('n2').value;
+ var res = parseInt(n1) + parseInt(n2);
+ document.getElementById('res').value = res;
+ }
+ </script>
+ </body>
+</html>

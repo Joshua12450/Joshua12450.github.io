@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+ <title>Calculator</title>
+ </head>
+ <body>
+ <table>
+ <tr>
+ <td>Enter numbers to evalulate </td>
+ <td> <input type="text" name="n1" value="" id="eval"> </td>
+ </tr>
+ </tr>
+ <tr>
+ <td>Result: </td>
+ <td><input type="text" name="res" value="" disabled id="res"></td>
+ </tr>
+ <tr>
+ <td></td>
+ <tr>
+    </tr>
+    <tr>
+      <td style="text-align:center;"> <button id="add" type="button" name="add" 
+         onclick="calculate()">evalulate</button>  </td>
+ </tr>
+</tr>
+ </table>
+ <script type="text/javascript">
+ function calculate(id) {
+var txt = document.getElementById('eval').value;
+ var res = eval(txt);
+  document.getElementById('res').value = res;
+ }
+</script>
+ </body> 
+</html>

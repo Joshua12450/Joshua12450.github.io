@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+ <title>Calculator</title>
+ </head>
+ <body>
+ <table>
+ <tr>
+ <td>Enter numbers to evalulate </td>
+ <td> <input type="text" name="eval" value="" id="eval"> </td>
+ </tr>
+ </tr>
+ <tr>
+ </tr>
+ <tr>
+ <td></td>
+ <tr>
+    </tr>
+    <tr>
+      <td style="text-align:center;"> <button id="clear" type="button" name="clear" 
+         onclick="empty()">Clear</button>  </td>   
+      <td style="text-align:center;"> <button id="calculate" type="button" name="calculate" 
+         onclick="calculate()">=</button>  </td>
+ </tr>
+</tr>
+ </table>
+<script type="text/javascript">
+   console.log("hi");
+
+
+ function empty(){
+   document.getElementById("eval").value = "";
+ }
+
+ function calculate() {
+var txt = document.getElementById('eval').value;
+var res = eval(txt);
+document.getElementById('eval').value = res;
+ }
+ </script>
+
+ </body> 
+</html>
